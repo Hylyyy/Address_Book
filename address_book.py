@@ -31,3 +31,18 @@ last_name = []
 address = []
 phone_number = []
 entry_number = []
+
+# The user will add a contact if he/she inputed 1.
+if option == 1:
+    print("1. ADD CONTACT")
+    first_name.append(input("Please enter your first name: "))
+    last_name.append(input("Please enter your last name: "))
+    address.append(input("Please enter your address: "))
+    phone_number.append(input("Please enter your phone number: "))
+
+    print_menu()
+
+
+
+
+
