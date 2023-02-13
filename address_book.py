@@ -42,7 +42,32 @@ if option == 1:
 
     print_menu()
 
+# The user will edit a contact if he/she inputed 2.
+elif option == 2:
+    print("2. EDIT CONTACT")
+    edit = int(input("Please enter the entry number you want to edit: "))
+    if edit in entry_number:
+        ind = int(entry_number.index(edit))
+        print("Previous Contact Information: ")
+        print("Full Name: ", first_name[ind], last_name[ind])
+        print("Address: ", address[ind])
+        print("Phone Number: ", phone_number[ind])
 
+        print("""
+        what would you like to edit?:
+        a. First name
+        b. Last name
+        c. Address
+        d. Phone number
+        """)
 
-
-
+        change_option = input("Please choose an option: ")
+    
+    # The user will edit the first name if he/she inputed letter a.
+        if change_option == "a":
+            index = entry_number.index(edit)
+            new_first = input("Please enter the new First name: ")
+            first_name[index] = new_first
+            print("Entry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
+            print("Address: ", address[index], "Phone Number: ", phone_number[index])
+            
