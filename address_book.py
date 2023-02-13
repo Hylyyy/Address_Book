@@ -6,6 +6,8 @@ print("********* HYDEE LYN C. PALISOC *********\n")
 
 # The user will be ask, what he or she wanted to do.
 
+
+def print_menu():
     print(
      """
 -----------------------------------
@@ -19,3 +21,6 @@ print("********* HYDEE LYN C. PALISOC *********\n")
 |    6. Exit                      |
 -----------------------------------
     """)
+
+
+print_menu()
