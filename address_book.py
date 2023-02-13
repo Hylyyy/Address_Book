@@ -24,3 +24,10 @@ def print_menu():
 
 
 print_menu()
+
+# These are the Lists
+first_name = []
+last_name = []
+address = []
+phone_number = []
+entry_number = []
