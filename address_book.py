@@ -82,8 +82,22 @@ elif option == 2:
     # The user will edit the adress if he/she inputed letter c.
         elif change_option == "c":
             index = entry_number.index(edit)
-            new_address = input("\nPlease enter the new Address: ")
+            new_address = input("Please enter the new Address: ")
             address[index] = new_address
-            print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
-            print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
-            
+            print("nEntry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
+            print("Address: ", address[index], "Phone Number: ", phone_number[index])
+
+    # The user will edit the phone number if he/she inputed letter d.
+        elif change_option == "d":
+            index = entry_number.index(edit)
+            new_number = input("Please enter the new Phone Number: ")
+            phone_number[index] = new_number
+            print("Entry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
+            print("Address: ", address[index], "Phone Number: ", phone_number[index])
+
+        else:
+            print("The entry does not exist.")
+
+    else:
+        print("The entry does not exist")
+    print_menu()
