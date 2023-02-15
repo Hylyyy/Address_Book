@@ -137,3 +137,10 @@ elif option == 5:
     (c) Search by ADDRESS
     (d) Search by CONTACT NUMBER
     """)
+
+# Searching using the first name if the user inputed letter a.
+change_choice = input("Enter choice: ")
+if change_choice == "a":
+    search = input("Enter first name: ")
+    print("Result/s:")
+    
