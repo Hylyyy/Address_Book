@@ -38,9 +38,9 @@ count = 0
 while count <= 100:
     option = int(input("Please choose an option below: "))
 
-# The user will add a contact if he/she inputed 1.
+# The user will add a contact if he/she inputed number 1.
     if option == 1:
-        print("1. ADD CONTACT")
+        print("\n1. ADD CONTACT")
         first_name.append(input("Please enter your first name: "))
         last_name.append(input("Please enter your last name: "))
         address.append(input("Please enter your address: "))
@@ -50,13 +50,13 @@ while count <= 100:
 
         print_menu()
 
-# The user will edit a contact if he/she inputed 2.
+# The user will edit a contact if he/she inputed number 2.
     elif option == 2:
-        print("2. EDIT CONTACT")
+        print("\n2. EDIT CONTACT")
         edit = int(input("Please enter the entry number you want to edit: "))
         if edit in entry_number:
             ind = int(entry_number.index(edit))
-            print("Previous Contact Information: ")
+            print("\nPrevious Contact Information: ")
             print("Full Name: ", first_name[ind], last_name[ind])
             print("Address: ", address[ind])
             print("Phone Number: ", phone_number[ind])
@@ -77,63 +77,63 @@ while count <= 100:
 # The user will edit the first name if he/she inputed letter a.
             if change_option == "a":
                 index = entry_number.index(edit)
-                new_first = input("Please enter the new First name: ")
+                new_first = input("\nPlease enter the new First name: ")
                 first_name[index] = new_first
-                print("Entry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
-                print("Address: ", address[index], "Phone Number: ", phone_number[index])
+                print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
+                print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
             
 # The user will edit the last name if he/she inputed letter b.
             elif change_option == "b":
                 index = entry_number.index(edit)
                 new_last = input("Please enter the new Last Name: ")
                 last_name[index] = new_last
-                print("Entry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
-                print("Address: ", address[index], "Phone Number: ", phone_number[index])
+                print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
+                print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
 
 # The user will edit the adress if he/she inputed letter c.
             elif change_option == "c":
                 index = entry_number.index(edit)
                 new_address = input("Please enter the new Address: ")
                 address[index] = new_address
-                print("nEntry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
-                print("Address: ", address[index], "Phone Number: ", phone_number[index])
+                print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
+                print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
 
 # The user will edit the phone number if he/she inputed letter d.
             elif change_option == "d":
                 index = entry_number.index(edit)
-                new_number = input("Please enter the new Phone Number: ")
+                new_number = input("\nPlease enter the new Phone Number: ")
                 phone_number[index] = new_number
-                print("Entry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
-                print("Address: ", address[index], "Phone Number: ", phone_number[index])
+                print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
+                print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
 
             else:
-                print("The entry does not exist.")
+                print("\nThe entry does not exist.")
 
         else:
-            print("The entry does not exist")
+            print("\nThe entry does not exist")
         print_menu()
 
 # The user will delete a contact if he/she inputed number 3.
     elif option == 3:
-        print("3. DELETE CONTACT")
+        print("\n3. DELETE CONTACT")
         entry_num = int(input("Enter the entry number you want to REMOVE: "))
         if entry_num in entry_number:
             index = entry_number.index(entry_num)
-            print("The Entry number", entry_num)
+            print("\nThe Entry number", entry_num)
             print("First name:", first_name.pop(index))
             print("Last name:", last_name.pop(index))
             print("Address:", address.pop(index))
-            print("Phone number:", phone_number.pop(index), "is REMOVED")
+            print("Phone number:", phone_number.pop(index), "\nis REMOVED")
             del entry_number[-1]
 # After the record has been deleted, all succeeding entries will move forward.
             count -= 1
         else:
-            print("The entry does not exist.")
+            print("\nThe entry does not exist.")
         print_menu()
 
-# The program will show the contacts if he/she inputed number 4.
+# The program will show the contacts if the user inputed number 4.
     elif option == 4:
-        print("VIEW CONTACTS")
+        print("\nVIEW CONTACTS")
         for i in range(len(entry_number)):
             print("""
  -------------------------
@@ -167,9 +167,9 @@ while count <= 100:
             print("Result/s:")
             for i in range(len(first_name)):
                 if search in first_name[i]:
-                    print("Entry number", entry_number[i])
+                    print("\nEntry number", entry_number[i])
                     print("First name:", first_name[i], "| Last name:", last_name[i])
-                    print("Address:", address[i], "Phone number:", phone_number[i])
+                    print("Address:", address[i], "\nPhone number:", phone_number[i])
             if search not in first_name:
                 print("The entry does not exist.")
 
@@ -179,9 +179,9 @@ while count <= 100:
             print("Result/s:")
             for i in range(len(last_name)):
                 if search in last_name[i]:
-                    print("nEntry number", entry_number[i])
+                    print("\nEntry number", entry_number[i])
                     print("First name:", first_name[i], "| Last name:", last_name[i])
-                    print("Address:", address[i], "Phone number:", phone_number[i])
+                    print("Address:", address[i], "\nPhone number:", phone_number[i])
             if search not in last_name:
                 print("The entry does not exist.")
 
@@ -191,9 +191,9 @@ while count <= 100:
             print("Result/s:")
             for i in range(len(address)):
                 if search in address[i]:
-                    print("Entry number", entry_number[i])
+                    print("\nEntry number", entry_number[i])
                     print("First name:", first_name[i], "| Last name:", last_name[i])
-                    print("Address:", address[i], "Phone number:", phone_number[i])
+                    print("Address:", address[i], "\nPhone number:", phone_number[i])
             if search not in address:
                 print("The entry does not exist.")
 
@@ -203,9 +203,9 @@ while count <= 100:
             print("Result/s:")
             for i in range(len(phone_number)):
                 if search in phone_number[i]:
-                    print("Entry number", entry_number[i])
+                    print("\nEntry number", entry_number[i])
                     print("First name:", first_name[i], "| Last name:", last_name[i])
-                    print("Address:", address[i], "Phone number:", phone_number[i])
+                    print("Address:", address[i], "\nPhone number:", phone_number[i])
             if search not in phone_number:
                 print("The entry does not exist.")
 
@@ -225,5 +225,5 @@ $                                 $
         break
 
     else:
-        print("The entry does not exist.")
+        print("\nThe entry does not exist.")
         break
