@@ -31,6 +31,7 @@ last_name = []
 address = []
 phone_number = []
 entry_number = []
+count = 0
 
 #  The program can only contain 100 entries.
 while count <= 100:
