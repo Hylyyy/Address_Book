@@ -197,13 +197,16 @@ while count <= 100:
             if search not in phone_number:
                 print("The entry does not exist.")
 
+        print_menu()
+
 # If the user chooses option 6, the program will exit.
     elif option == 6:
         print("""
         Thank you for using the program!!!
         """)
         exit()
-        
+        break
+
     else:
         print("The entry does not exist.")
-        
+        break
