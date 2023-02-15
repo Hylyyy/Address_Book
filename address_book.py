@@ -174,4 +174,9 @@ elif change_choice == "c":
             print("Address:", address[i], "\nPhone number:", phone_number[i])
     if search not in address:
         print("The entry does not exist.")
-        
+
+# Searching using the phone number if the user inputed letter d.
+elif change_choice == "d":
+    search = input("Enter Phone number: ")
+    print("Result/s:")
+    
