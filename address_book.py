@@ -78,3 +78,12 @@ elif option == 2:
             last_name[index] = new_last
             print("Entry number: ", edit, "First Name: ", first_name[index], "\nLast Name: ", last_name[index])
             print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
+
+    # The user will edit the adress if he/she inputed letter c.
+        elif change_option == "c":
+            index = entry_number.index(edit)
+            new_address = input("\nPlease enter the new Address: ")
+            address[index] = new_address
+            print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
+            print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
+            
