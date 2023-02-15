@@ -186,3 +186,11 @@ elif change_choice == "d":
             print("Address:", address[i], "Phone number:", phone_number[i])
     if search not in phone_number:
         print("The entry does not exist.")
+
+# If the user chooses option 6, the program will exit.
+elif option == 6:
+    print("""
+    Thank you for using the program!!!
+    """)
+    exit()
+    break
