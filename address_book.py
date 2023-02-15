@@ -167,4 +167,11 @@ elif change_choice == "b":
 elif change_choice == "c":
     search = input("Enter Address: ")
     print("Result/s:")
-    
+    for i in range(len(address)):
+        if search in address[i]:
+            print("\nEntry number", entry_number[i])
+            print("First name:", first_name[i], "| Last name:", last_name[i])
+            print("Address:", address[i], "\nPhone number:", phone_number[i])
+    if search not in address:
+        print("The entry does not exist.")
+        
