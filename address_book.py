@@ -45,7 +45,7 @@ if option == 1:
     address.append(input("Please enter your address: "))
     phone_number.append(input("Please enter your phone number: "))
     count += 1
-    
+    entry_number.append(count)
     print_menu()
 
 # The user will edit a contact if he/she inputed 2.
