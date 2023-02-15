@@ -118,3 +118,13 @@ elif option == 3:
         print("The entry does not exist.")
     print_menu()
 
+# The program will show the contacts if he/she inputed number 4.
+elif option == 4:
+    print("VIEW CONTACTS")
+    for i in range(len(entry_number)):
+        print("  Entry number: ", entry_number[i])
+        print("  First Name: ", first_name[i])
+        print("  Last Name: ", last_name[i])
+        print("  Address: ", address[i])
+        print("  Phone Number: ", phone_number[i])
+    print_menu()
