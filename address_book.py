@@ -38,15 +38,15 @@ while count <= 100:
     option = int(input("Please choose an option below: "))
 
 # The user will add a contact if he/she inputed 1.
-if option == 1:
-    print("1. ADD CONTACT")
-    first_name.append(input("Please enter your first name: "))
-    last_name.append(input("Please enter your last name: "))
-    address.append(input("Please enter your address: "))
-    phone_number.append(input("Please enter your phone number: "))
-    count += 1
-    entry_number.append(count)
-    print_menu()
+    if option == 1:
+        print("1. ADD CONTACT")
+        first_name.append(input("Please enter your first name: "))
+        last_name.append(input("Please enter your last name: "))
+        address.append(input("Please enter your address: "))
+        phone_number.append(input("Please enter your phone number: "))
+        count += 1
+        entry_number.append(count)
+        print_menu()
 
 # The user will edit a contact if he/she inputed 2.
 elif option == 2:
