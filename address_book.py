@@ -143,4 +143,10 @@ change_choice = input("Enter choice: ")
 if change_choice == "a":
     search = input("Enter first name: ")
     print("Result/s:")
-    
+    for i in range(len(first_name)):
+        if search in first_name[i]:
+            print("Entry number", entry_number[i])
+            print("First name:", first_name[i], "| Last name:", last_name[i])
+            print("Address:", address[i], "Phone number:", phone_number[i])
+    if search not in first_name:
+        print("The entry does not exist.")        
