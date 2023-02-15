@@ -4,6 +4,7 @@
 print("************  PROGRAMMED BY  ************")
 print("********* HYDEE LYN C. PALISOC *********\n")
 
+
 # The user will be ask, what he or she wanted to do.
 
 
@@ -46,6 +47,7 @@ while count <= 100:
         phone_number.append(input("Please enter your phone number: "))
         count += 1
         entry_number.append(count)
+
         print_menu()
 
 # The user will edit a contact if he/she inputed 2.
@@ -119,7 +121,9 @@ while count <= 100:
             print("Last name:", last_name.pop(index))
             print("Address:", address.pop(index))
             print("Phone number:", phone_number.pop(index), "is REMOVED")
-        
+            del entry_number[-1]
+# After the record has been deleted, all succeeding entries will move forward.
+            count -= 1
         else:
             print("The entry does not exist.")
         print_menu()
