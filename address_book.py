@@ -76,8 +76,8 @@ elif option == 2:
             index = entry_number.index(edit)
             new_last = input("Please enter the new Last Name: ")
             last_name[index] = new_last
-            print("Entry number: ", edit, "First Name: ", first_name[index], "\nLast Name: ", last_name[index])
-            print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
+            print("Entry number: ", edit, "First Name: ", first_name[index], "Last Name: ", last_name[index])
+            print("Address: ", address[index], "Phone Number: ", phone_number[index])
 
     # The user will edit the adress if he/she inputed letter c.
         elif change_option == "c":
@@ -169,9 +169,9 @@ elif change_choice == "c":
     print("Result/s:")
     for i in range(len(address)):
         if search in address[i]:
-            print("\nEntry number", entry_number[i])
+            print("Entry number", entry_number[i])
             print("First name:", first_name[i], "| Last name:", last_name[i])
-            print("Address:", address[i], "\nPhone number:", phone_number[i])
+            print("Address:", address[i], "Phone number:", phone_number[i])
     if search not in address:
         print("The entry does not exist.")
 
@@ -179,4 +179,10 @@ elif change_choice == "c":
 elif change_choice == "d":
     search = input("Enter Phone number: ")
     print("Result/s:")
-    
+    for i in range(len(phone_number)):
+        if search in phone_number[i]:
+            print("Entry number", entry_number[i])
+            print("First name:", first_name[i], "| Last name:", last_name[i])
+            print("Address:", address[i], "Phone number:", phone_number[i])
+    if search not in phone_number:
+        print("The entry does not exist.")
