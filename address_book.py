@@ -198,8 +198,7 @@ elif option == 6:
     Thank you for using the program!!!
     """)
     exit()
-    break
-
+    
 else:
     print("The entry does not exist.")
-    break
+    
