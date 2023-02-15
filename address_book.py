@@ -150,10 +150,14 @@ while count <= 100:
 # The user can search a specific contact if he/she inputed number 5.
     elif option == 5:
         print("""
-        (a) Search by FIRST NAME
-        (b) Search by LAST NAME
-        (c) Search by ADDRESS
-        (d) Search by CONTACT NUMBER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|       Search Address Book       |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+|   (a) Search by FIRST NAME      |
+|   (b) Search by LAST NAME       |
+|   (c) Search by ADDRESS         |
+|   (d) Search by CONTACT NUMBER  |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         """)
 
 # Searching using the first name if the user inputed letter a.
@@ -210,7 +214,12 @@ while count <= 100:
 # If the user chooses option 6, the program will exit.
     elif option == 6:
         print("""
-        Thank you for using the program!!!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$                                 $
+$           Thank You             $
+$    For Using The Program!!!     $
+$                                 $
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
         """)
         exit()
         break
