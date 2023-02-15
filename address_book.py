@@ -32,6 +32,10 @@ address = []
 phone_number = []
 entry_number = []
 
+#  The program can only contain 100 entries.
+while count <= 100:
+    option = int(input("Please choose an option below: "))
+
 # The user will add a contact if he/she inputed 1.
 if option == 1:
     print("1. ADD CONTACT")
