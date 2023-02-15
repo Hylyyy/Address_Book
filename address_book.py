@@ -194,3 +194,7 @@ elif option == 6:
     """)
     exit()
     break
+
+else:
+    print("The entry does not exist.")
+    break
