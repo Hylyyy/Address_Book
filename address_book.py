@@ -101,3 +101,20 @@ elif option == 2:
     else:
         print("The entry does not exist")
     print_menu()
+
+# The user will delete a contact if he/she inputed number 3.
+elif option == 3:
+    print("3. DELETE CONTACT")
+    entry_num = int(input("Enter the entry number you want to REMOVE: "))
+    if entry_num in entry_number:
+        index = entry_number.index(entry_num)
+        print("The Entry number", entry_num)
+        print("First name:", first_name.pop(index))
+        print("Last name:", last_name.pop(index))
+        print("Address:", address.pop(index))
+        print("Phone number:", phone_number.pop(index), "is REMOVED")
+    
+    else:
+        print("The entry does not exist.")
+    print_menu()
+
