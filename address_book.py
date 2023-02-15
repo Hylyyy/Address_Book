@@ -149,4 +149,16 @@ if change_choice == "a":
             print("First name:", first_name[i], "| Last name:", last_name[i])
             print("Address:", address[i], "Phone number:", phone_number[i])
     if search not in first_name:
-        print("The entry does not exist.")        
+        print("The entry does not exist.")
+
+# Searching using the last name if the user inputed letter b.
+elif change_choice == "b":
+    search = input("Enter Last name: ")
+    print("Result/s:")
+    for i in range(len(last_name)):
+        if search in last_name[i]:
+            print("nEntry number", entry_number[i])
+            print("First name:", first_name[i], "| Last name:", last_name[i])
+            print("Address:", address[i], "Phone number:", phone_number[i])
+    if search not in last_name:
+        print("The entry does not exist.")
