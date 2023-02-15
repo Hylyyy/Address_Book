@@ -128,3 +128,12 @@ elif option == 4:
         print("  Address: ", address[i])
         print("  Phone Number: ", phone_number[i])
     print_menu()
+
+# The user can search a specific contact if he/she inputed number 5.
+elif option == 5:
+    print("""
+    (a) Search by FIRST NAME
+    (b) Search by LAST NAME
+    (c) Search by ADDRESS
+    (d) Search by CONTACT NUMBER
+    """)
