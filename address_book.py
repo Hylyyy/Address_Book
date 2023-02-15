@@ -125,81 +125,81 @@ while count <= 100:
         print_menu()
 
 # The program will show the contacts if he/she inputed number 4.
-elif option == 4:
-    print("VIEW CONTACTS")
-    for i in range(len(entry_number)):
-        print("  Entry number: ", entry_number[i])
-        print("  First Name: ", first_name[i])
-        print("  Last Name: ", last_name[i])
-        print("  Address: ", address[i])
-        print("  Phone Number: ", phone_number[i])
-    print_menu()
+    elif option == 4:
+        print("VIEW CONTACTS")
+        for i in range(len(entry_number)):
+            print("  Entry number: ", entry_number[i])
+            print("  First Name: ", first_name[i])
+            print("  Last Name: ", last_name[i])
+            print("  Address: ", address[i])
+            print("  Phone Number: ", phone_number[i])
+        print_menu()
 
 # The user can search a specific contact if he/she inputed number 5.
-elif option == 5:
-    print("""
-    (a) Search by FIRST NAME
-    (b) Search by LAST NAME
-    (c) Search by ADDRESS
-    (d) Search by CONTACT NUMBER
-    """)
+    elif option == 5:
+        print("""
+        (a) Search by FIRST NAME
+        (b) Search by LAST NAME
+        (c) Search by ADDRESS
+        (d) Search by CONTACT NUMBER
+        """)
 
 # Searching using the first name if the user inputed letter a.
-change_choice = input("Enter choice: ")
-if change_choice == "a":
-    search = input("Enter first name: ")
-    print("Result/s:")
-    for i in range(len(first_name)):
-        if search in first_name[i]:
-            print("Entry number", entry_number[i])
-            print("First name:", first_name[i], "| Last name:", last_name[i])
-            print("Address:", address[i], "Phone number:", phone_number[i])
-    if search not in first_name:
-        print("The entry does not exist.")
+        change_choice = input("Enter choice: ")
+        if change_choice == "a":
+            search = input("Enter first name: ")
+            print("Result/s:")
+            for i in range(len(first_name)):
+                if search in first_name[i]:
+                    print("Entry number", entry_number[i])
+                    print("First name:", first_name[i], "| Last name:", last_name[i])
+                    print("Address:", address[i], "Phone number:", phone_number[i])
+            if search not in first_name:
+                print("The entry does not exist.")
 
 # Searching using the last name if the user inputed letter b.
-elif change_choice == "b":
-    search = input("Enter Last name: ")
-    print("Result/s:")
-    for i in range(len(last_name)):
-        if search in last_name[i]:
-            print("nEntry number", entry_number[i])
-            print("First name:", first_name[i], "| Last name:", last_name[i])
-            print("Address:", address[i], "Phone number:", phone_number[i])
-    if search not in last_name:
-        print("The entry does not exist.")
+        elif change_choice == "b":
+            search = input("Enter Last name: ")
+            print("Result/s:")
+            for i in range(len(last_name)):
+                if search in last_name[i]:
+                    print("nEntry number", entry_number[i])
+                    print("First name:", first_name[i], "| Last name:", last_name[i])
+                    print("Address:", address[i], "Phone number:", phone_number[i])
+            if search not in last_name:
+                print("The entry does not exist.")
 
 # Searching using the address if the user inputed letter c.
-elif change_choice == "c":
-    search = input("Enter Address: ")
-    print("Result/s:")
-    for i in range(len(address)):
-        if search in address[i]:
-            print("Entry number", entry_number[i])
-            print("First name:", first_name[i], "| Last name:", last_name[i])
-            print("Address:", address[i], "Phone number:", phone_number[i])
-    if search not in address:
-        print("The entry does not exist.")
+        elif change_choice == "c":
+            search = input("Enter Address: ")
+            print("Result/s:")
+            for i in range(len(address)):
+                if search in address[i]:
+                    print("Entry number", entry_number[i])
+                    print("First name:", first_name[i], "| Last name:", last_name[i])
+                    print("Address:", address[i], "Phone number:", phone_number[i])
+            if search not in address:
+                print("The entry does not exist.")
 
 # Searching using the phone number if the user inputed letter d.
-elif change_choice == "d":
-    search = input("Enter Phone number: ")
-    print("Result/s:")
-    for i in range(len(phone_number)):
-        if search in phone_number[i]:
-            print("Entry number", entry_number[i])
-            print("First name:", first_name[i], "| Last name:", last_name[i])
-            print("Address:", address[i], "Phone number:", phone_number[i])
-    if search not in phone_number:
-        print("The entry does not exist.")
+        elif change_choice == "d":
+            search = input("Enter Phone number: ")
+            print("Result/s:")
+            for i in range(len(phone_number)):
+                if search in phone_number[i]:
+                    print("Entry number", entry_number[i])
+                    print("First name:", first_name[i], "| Last name:", last_name[i])
+                    print("Address:", address[i], "Phone number:", phone_number[i])
+            if search not in phone_number:
+                print("The entry does not exist.")
 
 # If the user chooses option 6, the program will exit.
-elif option == 6:
-    print("""
-    Thank you for using the program!!!
-    """)
-    exit()
-    
-else:
-    print("The entry does not exist.")
-    
+    elif option == 6:
+        print("""
+        Thank you for using the program!!!
+        """)
+        exit()
+        
+    else:
+        print("The entry does not exist.")
+        
