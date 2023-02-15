@@ -62,12 +62,15 @@ while count <= 100:
             print("Phone Number: ", phone_number[ind])
 
             print("""
-            what would you like to edit?:
-            a. First name
-            b. Last name
-            c. Address
-            d. Phone number
-            """)
+-----------------------------------
+|  What would you like to edit?:  |
+|---------------------------------|
+|         (a) First Name          |
+|         (b) Last Name           |
+|         (c) Address             |
+|         (d) Phone NUmber        |
+-----------------------------------
+""")
 
             change_option = input("Please choose an option: ")
     
@@ -132,6 +135,11 @@ while count <= 100:
     elif option == 4:
         print("VIEW CONTACTS")
         for i in range(len(entry_number)):
+            print("""
+ -------------------------
+ |  Contact Information  | 
+ ------------------------- 
+ """)          
             print("  Entry number: ", entry_number[i])
             print("  First Name: ", first_name[i])
             print("  Last Name: ", last_name[i])
