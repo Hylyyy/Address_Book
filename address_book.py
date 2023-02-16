@@ -49,7 +49,7 @@ count = 0
 while count <= 100:
     option = int(input("Please choose an option below: "))
 
-# The user will add a contact if he/she inputed number 1.
+# The user will add a contact if he/she inputted number 1.
     if option == 1:
         print("\n1. ADD CONTACT")
         first_name.append(input("Please enter your first name: "))
@@ -61,7 +61,7 @@ while count <= 100:
 
         print_menu()
 
-# The user will edit a contact if he/she inputed number 2.
+# The user will edit a contact if he/she inputted number 2.
     elif option == 2:
         print("\n2. EDIT CONTACT")
         edit = int(input("Please enter the entry number you want to edit: "))
@@ -85,7 +85,7 @@ while count <= 100:
 
             change_option = input("Please choose an option: ")
     
-# The user will edit the first name if he/she inputed letter a.
+# The user will edit the first name if he/she inputted letter a.
             if change_option == "a":
                 index = entry_number.index(edit)
                 new_first = input("\nPlease enter the new First name: ")
@@ -93,7 +93,7 @@ while count <= 100:
                 print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
                 print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
             
-# The user will edit the last name if he/she inputed letter b.
+# The user will edit the last name if he/she inputted letter b.
             elif change_option == "b":
                 index = entry_number.index(edit)
                 new_last = input("Please enter the new Last Name: ")
@@ -101,7 +101,7 @@ while count <= 100:
                 print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
                 print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
 
-# The user will edit the adress if he/she inputed letter c.
+# The user will edit the address if he/she inputted letter c.
             elif change_option == "c":
                 index = entry_number.index(edit)
                 new_address = input("Please enter the new Address: ")
@@ -109,7 +109,7 @@ while count <= 100:
                 print("\nEntry number: ", edit, "\nFirst Name: ", first_name[index], "\nLast Name: ", last_name[index])
                 print("Address: ", address[index], "\nPhone Number: ", phone_number[index])
 
-# The user will edit the phone number if he/she inputed letter d.
+# The user will edit the phone number if he/she inputted letter d.
             elif change_option == "d":
                 index = entry_number.index(edit)
                 new_number = input("\nPlease enter the new Phone Number: ")
@@ -124,7 +124,7 @@ while count <= 100:
             print("\nThe entry does not exist")
         print_menu()
 
-# The user will delete a contact if he/she inputed number 3.
+# The user will delete a contact if he/she inputted number 3.
     elif option == 3:
         print("\n3. DELETE CONTACT")
         entry_num = int(input("Enter the entry number you want to REMOVE: "))
@@ -142,7 +142,7 @@ while count <= 100:
             print("\nThe entry does not exist.")
         print_menu()
 
-# The program will show the contacts if the user inputed number 4.
+# The program will show the contacts if the user inputted number 4.
     elif option == 4:
         print("\nVIEW CONTACTS")
         for i in range(len(entry_number)):
@@ -158,7 +158,7 @@ while count <= 100:
             print("  Phone Number: ", phone_number[i])
         print_menu()
 
-# The user can search a specific contact if he/she inputed number 5.
+# The user can search a specific contact if he/she inputted number 5.
     elif option == 5:
         print("""
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -171,7 +171,7 @@ while count <= 100:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         """)
 
-# Searching using the first name if the user inputed letter a.
+# Searching using the first name if the user inputted letter a.
         change_choice = input("Enter choice: ")
         if change_choice == "a":
             search = input("Enter first name: ")
@@ -184,7 +184,7 @@ while count <= 100:
             if search not in first_name:
                 print("The entry does not exist.")
 
-# Searching using the last name if the user inputed letter b.
+# Searching using the last name if the user inputted letter b.
         elif change_choice == "b":
             search = input("Enter Last name: ")
             print("Result/s:")
@@ -196,7 +196,7 @@ while count <= 100:
             if search not in last_name:
                 print("The entry does not exist.")
 
-# Searching using the address if the user inputed letter c.
+# Searching using the address if the user inputted letter c.
         elif change_choice == "c":
             search = input("Enter Address: ")
             print("Result/s:")
@@ -208,7 +208,7 @@ while count <= 100:
             if search not in address:
                 print("The entry does not exist.")
 
-# Searching using the phone number if the user inputed letter d.
+# Searching using the phone number if the user inputted letter d.
         elif change_choice == "d":
             search = input("Enter Phone number: ")
             print("Result/s:")
@@ -233,7 +233,7 @@ while count <= 100:
         geocoder = OpenCageGeocode(key)
         query = str(location)
         results = geocoder.geocode(query)
-        #print(results)
+        # print(results)
         lat = results[0]['geometry']['lat']
         lng = results[0]['geometry']['lng']
         print(lat, lng)
