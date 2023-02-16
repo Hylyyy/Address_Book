@@ -241,6 +241,8 @@ while count <= 100:
         folium.Marker([lat, lng], popup=location).add_to(myMap)
         myMap.save("numlocation.html")
 
+        print_menu()
+
 # If the user chooses option 6, the program will exit.
     elif option == 7:
         print("""
@@ -257,3 +259,4 @@ $                                 $
     else:
         print("\nThe entry does not exist.")
         break
+
