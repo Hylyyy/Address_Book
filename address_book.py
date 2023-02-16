@@ -220,6 +220,8 @@ while count <= 100:
 # The user will track a number if he/she inputted number 6.
     elif option == 6:
         pepnumber = phonenumbers.parse(number)
+        location = geocoder.description_for_number(pepnumber, "en")
+        print(location)
 
 # If the user chooses option 6, the program will exit.
     elif option == 7:
