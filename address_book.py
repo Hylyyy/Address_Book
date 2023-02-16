@@ -231,6 +231,7 @@ while count <= 100:
         key = '1999177e3fb6406c9f9b29b31a2b9641'
         geocoder = OpenCageGeocode(key)
         query = str(location)
+        results = geocoder.geocode(query)
 
 # If the user chooses option 6, the program will exit.
     elif option == 7:
