@@ -6,6 +6,7 @@ import opencage
 from pnum_collections import number
 from phonenumbers import geocoder
 from phonenumbers import carrier
+from opencage.geocoder import OpenCageGeocode
 
 
 # These are the input, processing and outputs statements.
