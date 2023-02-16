@@ -232,7 +232,10 @@ while count <= 100:
         geocoder = OpenCageGeocode(key)
         query = str(location)
         results = geocoder.geocode(query)
-        print(results)
+        #print(results)
+        lat = results[0]['geometry']['lat']
+        lng = results[0]['geometry']['lng']
+        print(lat, lng)
 
 # If the user chooses option 6, the program will exit.
     elif option == 7:
