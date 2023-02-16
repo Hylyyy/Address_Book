@@ -1,4 +1,6 @@
-# This code is used to create an Adress Book that can contain 100 entries.
+# This code is used to create an Address Book that can contain 100 entries.
+
+import phonenumbers
 
 # These are the input, processing and outputs statements.
 print("************  PROGRAMMED BY  ************")
