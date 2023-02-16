@@ -19,7 +19,8 @@ def print_menu():
 |    3. Delete Contact            |
 |    4. View Contacts             |
 |    5. Search Address Book       |
-|    6. Exit                      |
+|    6. Tracking Country Number   |
+|    7. Exit                      |
 -----------------------------------
     """)
 
