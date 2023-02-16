@@ -217,8 +217,12 @@ while count <= 100:
 
         print_menu()
 
-# If the user chooses option 6, the program will exit.
+# The user will track a number if he/she inputted number 6.
     elif option == 6:
+        pepnumber = phonenumbers.parse(number)
+
+# If the user chooses option 6, the program will exit.
+    elif option == 7:
         print("""
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $                                 $
