@@ -1,6 +1,7 @@
 # This code is used to create an Address Book that can contain 100 entries.
 
 import phonenumbers
+import opencage
 
 from pnum_collections import number
 from phonenumbers import geocoder
