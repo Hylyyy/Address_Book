@@ -2,6 +2,7 @@
 
 import phonenumbers
 import opencage
+import folium
 
 from pnum_collections import number
 from phonenumbers import geocoder
