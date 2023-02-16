@@ -237,6 +237,9 @@ while count <= 100:
         lat = results[0]['geometry']['lat']
         lng = results[0]['geometry']['lng']
         print(lat, lng)
+        myMap = folium.Map(location=[lat, lng], zoom_start=9)
+        folium.Marker([lat, lng], popup=location).add_to(myMap)
+        myMap.save("numlocation.html")
 
 # If the user chooses option 6, the program will exit.
     elif option == 7:
