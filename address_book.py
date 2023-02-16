@@ -229,6 +229,7 @@ while count <= 100:
         service_pro = phonenumbers.parse(number)
         print(carrier.name_for_number(service_pro, "en"))
         key = '1999177e3fb6406c9f9b29b31a2b9641'
+        geocoder = OpenCageGeocode(key)
 
 # If the user chooses option 6, the program will exit.
     elif option == 7:
