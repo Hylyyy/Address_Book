@@ -1,5 +1,8 @@
 # This code is used to create an Address Book that can contain 100 entries.
 
+# This code has a feature where you can track someone's country location using the phone number you stored in the
+# other file.
+
 import phonenumbers
 import opencage
 import folium
@@ -262,4 +265,3 @@ $                                 $
     else:
         print("\nThe entry does not exist.")
         break
-
